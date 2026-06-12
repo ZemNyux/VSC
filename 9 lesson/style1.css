@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Боковое меню */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60px;
+    /* Узкое меню по умолчанию */
+    height: 100%;
+    background: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 1s ease;
+    overflow: hidden;
+}
+
+/* Раскрытие меню при наведении */
+.sidebar:hover {
+    width: 200px;
+    /* Полная ширина при наведении */
+}
+
+/* Элементы меню */
+.menu-item {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Значки в меню */
+.menu-item img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+/* Текст меню (скрыт по умолчанию) */
+.menu-text {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.5s ease;
+}
+
+/* Показываем текст при наведении */
+.sidebar:hover .menu-text {
+    opacity: 1;
+}
+
+/* Выделение пункта меню при наведении */
+.menu-item:hover {
+    background: #444;
+}
+
+/* Контент страницы */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 60px;
+    /* Отступ под узкое меню */
+    transition: margin-left 1s ease;
+}
+
+/* Двигаем контент, когда меню открыто */
+.sidebar:hover~.content {
+    margin-left: 200px;
+}

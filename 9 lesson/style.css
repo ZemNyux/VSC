@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    overflow: auto;
+    max-height: 300px;
+    /* Ограничение высоты для вертикального скролла */
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    position: sticky;
+    top: 0;
+    background: #6b9ab8;
+    color: white;
+    z-index: 2;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+tbody tr:nth-child(even) td {
+    background: #e6f2f7;
+}
+
+tbody tr:nth-child(odd) td {
+    background: #f9f9f9;
+}
+
+/* Фиксируем первый столбец у левого края окна */
+tbody td:first-child,
+thead th:first-child {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    /* Фиксированная ширина для первого столбца */
+    background: #6b9ab8;
+    color: white;
+    font-weight: bold;
+    z-index: 3;
+    text-align: center;
+}
+
+/* Убираем дублирование в таблице, сдвигая остальные ячейки вправо */
+table {
+    margin-left: 100px;
+}
