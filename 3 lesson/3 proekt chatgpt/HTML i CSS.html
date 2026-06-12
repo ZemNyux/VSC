@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Улюблені фільми</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00509e;
+        }
+
+        .movie-block {
+            background-color: #e6f7ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .movie-block img {
+            width: 500px;
+            border-radius: 10px;
+        }
+
+        .movie-info {
+            margin-top: 10px;
+        }
+
+        .movie-info h2 {
+            color: #0073e6;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .movie-info p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .movie-info .rating {
+            font-weight: bold;
+            color: #ff4500;
+        }
+
+        form {
+            background-color: #e6f7ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            text-align: center;
+            color: #00509e;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #0073e6;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Мої улюблені фільми</h1>
+
+        <!-- Таксі -->
+        <div class="movie-block">
+            <img src="https://via.placeholder.com/500" alt="Таксі">
+            <div class="movie-info">
+                <h2>Таксі</h2>
+                <p>Шалена комедія про таксиста Даніеля, який обожнює швидкість і бере участь у гонитвах з поліцією.</p>
+                <p>Враження: Драйв, сміх та незабутні сцени!</p>
+                <p class="rating">Рейтинг IMDB: 7.0</p>
+            </div>
+        </div>
+
+        <!-- Таксі 2 -->
+        <div class="movie-block">
+            <img src="https://via.placeholder.com/500" alt="Таксі 2">
+            <div class="movie-info">
+                <h2>Таксі 2</h2>
+                <p>Продовження пригод Даніеля, тепер він допомагає поліції у важливій справі. Ще більше швидкості та
+                    гумору!</p>
+                <p>Враження: Неймовірно смішно та напружено!</p>
+                <p class="rating">Рейтинг IMDB: 6.5</p>
+            </div>
+        </div>
+
+        <!-- Таксі 3 -->
+        <div class="movie-block">
+            <img src="https://via.placeholder.com/500" alt="Таксі 3">
+            <div class="movie-info">
+                <h2>Таксі 3</h2>
+                <p>Нові пригоди Даніеля та його друзів, з яких неможливо втриматися від сміху!</p>
+                <p>Враження: Весела атмосфера, приголомшливі гонитви та добрий гумор.</p>
+                <p class="rating">Рейтинг IMDB: 5.8</p>
+            </div>
+        </div>
+
+        <!-- Форма -->
+        <form>
+            <h2>Залиште свій відгук</h2>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введіть номер телефону" required>
+
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" rows="4" placeholder="Введіть ваш коментар" required></textarea>
+
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</body>
+
+</html>

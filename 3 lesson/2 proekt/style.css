@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: Azure;
+    color: DimGrey;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: RoyalBlue;
+}
+.borderimg1 {
+    background-color: Maroon;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.borderimg2 {
+    background-color: BurlyWood;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.borderimg3{
+    background-color: LightSkyBlue	;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+img{
+    width: 500px;
+    border-radius: 30px;
+}
+.h2class1{
+    color: Maroon;
+    font-size: 30px;
+    font-weight: bold;
+}
+.h2class2{
+    color: BurlyWood;
+    font-size: 30px;
+    font-weight: bold;
+}
+.h2class3{
+    color: LightSkyBlue;
+    font-size: 30px;
+    font-weight: bold;
+}
+p{
+    font-size: 25px;
+}
+.rating{
+    color: #ff4500;
+    font-weight: bold;
+}
+form {
+    background-color: #e6f7ff;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.h2form1{
+    color: DarkBlue;
+}
+label {
+    font-weight: bold;
+    font-size: 15px;
+}
+input{
+    width: 100%;
+    padding: 10px; /*ширина инпута*/
+    margin-bottom: 20px; /*отступы*/
+    border-radius: 10px;
+    border: 1px solid Gainsboro;
+    background-color: #f9f9f9;
+    
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: DodgerBlue;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+}

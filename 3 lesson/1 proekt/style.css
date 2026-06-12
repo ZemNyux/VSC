@@ -1,0 +1,51 @@
+body{
+    margin: 0 auto;
+    background-color: goldenrod;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    background-color: rgb(217, 248, 238);
+    color: chartreuse;  
+    font-size: 20px;
+}
+p{
+    color: deeppink;
+    font-size: 60px;
+    border-bottom: 2px solid black;
+   
+}
+.testname{
+    color: crimson;
+}
+#testSurname{
+    color: hotpink  
+}
+#arcane{
+    border: 5px solid
+}
+button{
+    width: 100px;
+    height: 25px;
+    color: aquamarine;
+    background-color: red;
+    border-radius: 10px;
+}
+button{
+    color: whitesmoke;
+    background-color: black;
+}
+img{
+    width: 800px;
+    border: 5px solid cyan;
+    border-radius: 100px;
+}
+.border{
+    width: 800px;
+    border-bottom: 2px solid black;
+}
+
+/* called by tag - 1pokemon
+called by class - 10pokemon
+called by id - 100pokemon
+called by cheat(*) - infinitypokemon */
