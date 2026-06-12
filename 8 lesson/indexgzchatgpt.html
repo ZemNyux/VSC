@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .todo-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+        .todo-container h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d1ecf1;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .task:nth-child(odd) {
+            background-color: #bee5eb;
+        }
+        .task.checked {
+            background-color: #28a745; /* Зеленый цвет для выполненных задач */
+            color: white;
+            text-decoration: line-through;
+        }
+        .checkbox {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My To Do List</h1>
+        <div class="task">
+            <input type="checkbox" class="checkbox">
+            <span>Hit the gym</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="checkbox">
+            <span>Pay bills</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="checkbox">
+            <span>Meet John</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="checkbox">
+            <span>Buy eggs</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="checkbox">
+            <span>Read a book</span>
+        </div>
+    </div>
+
+    <script>
+        // Получаем все чекбоксы
+        const checkboxes = document.querySelectorAll('.checkbox');
+
+        // Добавляем обработчик событий на каждый чекбокс
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', (event) => {
+                const task = event.target.parentElement; // Родительский элемент (task)
+                
+                if (event.target.checked) {
+                    // Если чекбокс отмечен, добавляем класс checked
+                    task.classList.add('checked');
+                } else {
+                    // Если чекбокс снят, удаляем класс checked
+                    task.classList.remove('checked');
+                }
+            });
+        });
+    </script>
+</body>
+</html> -->
+<!--------------------------------------------------------------------------

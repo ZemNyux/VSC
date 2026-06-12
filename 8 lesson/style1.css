@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 30px;
+}
+.container {
+    background-color: #f5f5f5;
+    padding: 30px;
+    width: 500px;
+
+}
+.container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+
+}
+.task {
+    display:flex;
+    justify-content:left;
+    background-color: #d1ecf1;
+    padding: 10px;
+    margin: 0px;
+}
+.task:nth-child(2) {background-color: #a5ccda;}
+.task:nth-child(3) {background-color: #e2e2e2;}
+.task:nth-child(4) {background-color: #a5ccda;}
+.task:nth-child(5) {background-color: #add8e6;}
+.task:nth-child(6) {background-color: #e2e2e2;}
+.task:nth-child(7) {background-color: #add8e6;}
+.task:nth-child(8) {background-color: #a5ccda;}
+.task:nth-child(9) {background-color: #add8e6;}
+.task:nth-child(10) {background-color: #a5ccda;}
+.task:nth-child(11) {background-color: #add8e6;}
+.task:nth-child(12) {background-color: #e2e2e2;}
+.task:nth-child(13) {background-color: #add8e6;}
+
+
+.checkbox {
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 25px;
+}
+.icon{
+    margin-left: 20px;
+    font-size: small;
+    color: #8b0e24;
+}
+.line{
+    text-decoration: line-through;
+}
+span{
+    padding-top: 5px;
+    font-size: small;
+}
