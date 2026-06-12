@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d89ef;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Main Block */
+        .main-block {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .main-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .main-block p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        .benefit-card {
+            width: 30%;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 40px 20px;
+            background-color: #f0f0f5;
+            text-align: center;
+        }
+
+        .testimonial-card {
+            display: inline-block;
+            width: 30%;
+            min-width: 250px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d89ef;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p, footer a {
+            margin: 0;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .benefit-card, .testimonial-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Online Course</h1>
+    </header>
+
+    <!-- Main Block -->
+    <div class="main-block">
+        <h2>Навчися програмувати з нуля!</h2>
+        <p>Приєднуйтесь до нашого курсу та здобудьте навички, які змінять ваше життя. Гнучкий графік та підтримка професіоналів гарантують ваш успіх!</p>
+    </div>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefit-card">Уроки від професіоналів</div>
+        <div class="benefit-card">Гнучкий графік</div>
+        <div class="benefit-card">Сертифікат по завершенню</div>
+        <div class="benefit-card">Доступ до матеріалів 24/7</div>
+        <div class="benefit-card">Індивідуальні консультації</div>
+        <div class="benefit-card">Практичні завдання</div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonial-card">
+            <p>"Цей курс перевершив мої очікування. Все пояснено дуже доступно!"</p>
+            <p>- Олена</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Чудовий досвід! Гнучкий графік дозволив мені поєднувати навчання з роботою."</p>
+            <p>- Іван</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Я отримав сертифікат і почав працювати в IT. Рекомендую всім!"</p>
+            <p>- Сергій</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Контакти: info@onlinecourse.com | +380 99 123 4567</p>
+        <p>Соцмережі: <a href="#">Facebook</a>, <a href="#">Instagram</a></p>
+        <p>&copy; 2024 Online Course. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
