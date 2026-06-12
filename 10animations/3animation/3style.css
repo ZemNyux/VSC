@@ -1,0 +1,21 @@
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    background-color: #2ecc71;
+    padding: 10px;
+}
+
+.marquee p {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(500%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
