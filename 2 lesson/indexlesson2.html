@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+</head>
+<body>
+
+    <h1>Forms, Input, Labels, ids</h1>
+    <!--
+    HTML - ЦЕ СУТО ПРО РОЗМІТКУ
+    JAVA SCRIPT - РОБИТЬ БІЛЬШ УДОБНІШЕ
+    CSS - РОБИТЬ ГАРНО САЙТ
+    Forms - взяти від користувача інформацію, поспілкуватись наприклад, можно повторювати скільки хочешьб, уніварсельний інструмент, кудись збирати потрібно
+    Action - атрибут, посилання вставляти в "", посилання буде давати бєкєнд розробник
+    Input - не парний тег сам по собі є, логін
+    Type - определяж якого виду типу мі використовуємо input
+    Name - відповідає за то як буде називатись інформація, змінна
+    placeholder - що буде написано в середині інпуту
+    required - робить так щоб користувач обовбязково ввів дані на сайті
+    value - значення, якщо поставити в інпут, то по замовчуванні воно буде там стояти
+    Label - щоб користувач зміг промахнутись та все одно попасти в інпут
+    Type - якого типу буде інпут 
+    Id - атрибут якій необхідний щоб звьязати свій інпут з лейблом
+    -->
+
+    <style>
+        body{
+            background-color: rgb(103, 132, 212);
+        }
+        h1,h4,p{
+           color: rgb(red, green, blue); 
+        }
+        input{
+            background-color: rgb(30, 88, 110);
+            color: rgb(112, 228, 189);
+            
+            display: block;
+            margin: 10px;
+        }
+    </style>
+
+    <h4>Autorization form</h4>
+    <form action="https://fom.in.ua/echo/">
+
+        <label for="login">
+            <p>Login</p>
+            <input type="text" name="username" id="login" required placeholder="Enter your login...">
+        </label>  
+        <label for="pass">
+            <p>Password</p>
+            <input type="password" name="userPassword" id="pass" required placeholder="Enter your password...">
+        </label>  
+        <input type="checkbox" name="check1" id="">
+        <input type="color" name="color" id="">
+        <input type="datew" name="datew" id="">
+        <input type="datetime" name="datetime" id="">
+        <input type="datetime-local" name="datetime-local" id="">
+        <input type="email" name="email" id="">
+        <input type="file" name="file" id="">
+        <input type="month" name="month" id="">
+        <input type="number" name="number" id=""> <!--самме число передати не номер телефона, також приймає max min value -->
+        <input type="radio" name="radio" id=""> <!--не можна віджати кнопки як наприклад checkbox-->
+        <input type="radio" name="radio" id="">
+        <input type="radio" name="radio" id=""> <!--бігунок, також можна вписати значення min max -->
+        <input type="range" name="range" id="">
+        <input type="search" name="search" id="">
+        <input type="tel" name="tel" id=""> <!--номер телефона-->
+        <input type="time" name="time" id=""> 
+        <input type="url" name="url" id=""><!--тільки URL посилання повне-->
+        <input type="week" name="week" id="">
+        <button>Send info</button>
+
+    </form>
+</body>
+
+</html>

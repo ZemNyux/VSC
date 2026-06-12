@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Forms</title>
+
+    <style>
+        body{
+            background-color: rgb(216, 224, 245);
+        }
+        button{
+            background-color: rgb(51, 233, 51);
+            color: aliceblue;
+            border: none;
+            border-radius: 10px;
+            width: 200px;
+        }
+        h1,h4,p{
+           color: rgb(red, green, blue); 
+        }
+        input{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            display: block;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Форма реєстрації -->
+    <form action="https://fom.in.ua/echo/">
+        <label for="registrationForm">
+            <h2>Форма реєстрації</h2>
+            <p>Username</p>
+            <input type="text" name="username" id="username" required placeholder="Enter your username...">
+        </label>  
+        <label for="email">
+            <p>Email</p>
+            <input type="email" name="email" id="email" required placeholder="Enter your email...">
+        </label>
+        <label for="password">
+            <p>Password</p>
+            <input type="password" name="password" id="password" required placeholder="Enter your password...">
+            <button>Зареєструватися</button>
+        </label>  
+    </form>
+
+    <!-- Форма подачі оголошення -->
+    <form action="https://fom.in.ua/echo/">
+        <h2>Форма подачі про продаж авто</h2>
+        <label for="brand">
+            <p>Марка</p>
+            <input type="text" name="brand" id="brand" required placeholder="Enter your brand...">
+        </label>  
+        <label for="model">
+            <p>Модель</p>
+            <input type="text" name="model" id="model" required placeholder="Enter your model...">
+        </label>
+        <label for="year">
+            <p>Рік випуску</p>
+            <input type="text" name="year" id="year" required placeholder="Enter your year...">
+        </label>
+        <label for="color">
+            <p>Колір</p>
+            <input type="text" name="color" id="color" required placeholder="Enter your color...">
+        </label>
+
+        <label for="stan">
+            <p>Стан</p>
+            <select name="stan" id="stan" required>
+                <option value="new">Новий</option> 
+                <option value="used">Вживаний</option>
+                <option value="damaged">Пошкоджений</option>
+            </select>
+            
+        <label for="fuel">
+            <p>Тип палива</p>
+            <select name="fuel" id="fuel" required>
+                <option value="petrol">Бензин</option> 
+                <option value="diesel">Дизель</option>
+                <option value="electric">Електро</option>
+            </select>    
+        
+        <label for="transmission">
+            <p>Тип трансмісії</p>
+            <select name="transmission" id="transmission" required>
+                <option value="manual">Механічна</option> 
+                <option value="automatic">Автоматична</option>
+                <option value="napiv-automatic">Напівавтомат</option>
+            </select>
+            
+        <label for="engine">
+            <p>Об'єм двигуна</p>
+            <select name="engine" id="engine" required>
+                <option value="1.0">1.0 л</option>
+                <option value="1.6">1.6 л</option>
+                <option value="2.0">2.0 л</option>
+                <option value="3.0">3.0 л</option>
+            </select>  
+
+            <p>Номер телефону</p>  
+        <input type="tel" name="phone" id="phone" required placeholder="Наприклад: 0981234567">
+            <p>Завантажити фото</p>  
+        <input type="file" name="photo" id="photo" required>
+        <button>Подати форму</button>
+        </label>
+    </form>
+        
+</body>
+</html>
