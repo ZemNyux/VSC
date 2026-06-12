@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(100, 100, 255);
+    margin: 0 auto;
+}
+.pulse-button {
+    padding: 10px 20px;
+    font-size: 25spx;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #5dcee2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulseButton 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseButton {
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(255, 207, 201, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 237, 235, 0.4);
+    }
+}
