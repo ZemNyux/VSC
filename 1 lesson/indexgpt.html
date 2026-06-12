@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт з формами</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Форма реєстрації -->
+    <form id="registrationForm">
+        <h2>Форма реєстрації</h2>
+        <label for="username">Ім'я користувача</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+    <!-- Форма подачі оголошення -->
+    <form id="carAdForm">
+        <h2>Форма подачі оголошення про продаж авто</h2>
+        
+        <label for="brand">Марка</label>
+        <input type="text" id="brand" name="brand" required>
+        
+        <label for="model">Модель</label>
+        <input type="text" id="model" name="model" required>
+        
+        <label for="year">Рік випуску</label>
+        <input type="number" id="year" name="year" min="1900" max="2024" required>
+        
+        <label for="color">Колір</label>
+        <input type="text" id="color" name="color" required>
+        
+        <label for="condition">Стан</label>
+        <select id="condition" name="condition" required>
+            <option value="new">Новий</option>
+            <option value="used">Вживаний</option>
+            <option value="damaged">Пошкоджений</option>
+        </select>
+        
+        <label for="fuel">Тип палива</label>
+        <select id="fuel" name="fuel" required>
+            <option value="petrol">Бензин</option>
+            <option value="diesel">Дизель</option>
+            <option value="electric">Електро</option>
+        </select>
+        
+        <label for="transmission">Тип трансмісії</label>
+        <select id="transmission" name="transmission" required>
+            <option value="manual">Механічна</option>
+            <option value="automatic">Автоматична</option>
+            <option value="semi-automatic">Напівавтомат</option>
+        </select>
+        
+        <label for="engine">Об'єм двигуна</label>
+        <select id="engine" name="engine" required>
+            <option value="1.0">1.0 л</option>
+            <option value="1.6">1.6 л</option>
+            <option value="2.0">2.0 л</option>
+            <option value="3.0">3.0 л</option>
+        </select>
+        
+        <label for="phone">Номер телефону</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Наприклад: 0981234567" required>
+        
+        <label for="photo">Завантажити фото</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        
+        <button type="submit">Подати оголошення</button>
+    </form>
+
+</body>
+</html>
