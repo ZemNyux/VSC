@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.conteiner{
+    font-family: Arial, sans-serif;
+    background-color: #aed8e5;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}

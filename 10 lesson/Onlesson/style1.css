@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e9e8e8;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* Вправа 2 */
+.container-horizontal {
+    display: flex;
+    justify-content: space-between;
+}
+.container-horizontal .box {
+    height: 100px;
+}
+
+/* Вправа 3 */
+.container-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+.container-bottom .box:nth-child(1) { height: 150px; }
+.container-bottom .box:nth-child(2) { height: 200px; }
+.container-bottom .box:nth-child(3) { height: 250px; }
