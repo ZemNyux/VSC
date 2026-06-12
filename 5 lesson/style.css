@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: darkgreen;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    border: 5px solid pink;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(66, 150, 66);
+    padding: 10px;
+    margin-left: 23px;
+    margin-top: 15px;
+}
+
+img {
+    width: 40%;
+}
+
+p {
+    width: 60%;
+    margin: auto;
+}
