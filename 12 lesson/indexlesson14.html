@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWESOME SITE!</title>
+</head>
+
+<body>
+    <style>
+        .cont {
+            display: flex;
+            width: 1400px;
+            justify-content: space-between;
+            background-color: whitesmoke;
+            margin: 0 auto;
+            border: 3px solid black;
+            position: relative;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 15px;
+        }
+
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 15px;
+            position: static;
+        }
+
+        .square:nth-child(4) {
+            position: absolute;
+            background-color: red;
+            width: 110px;
+            height: 110px;
+            z-index: 1;
+            left: 100px;
+        }
+        .square:nth-child(1) {
+            position: absolute;
+            background-color: greenyellow;
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+        }
+    </style>
+    <section>
+        <nav>
+            <a href="">lorem</a>
+            <a href="">lorem</a>
+            <a href="">lorem</a>
+        </nav>
+    </section>
+
+    <div class="cont">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="cont">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <h1>THE END</h1>
+</body>
+
+</html>
